@@ -1,7 +1,6 @@
 *{
   margin: 0;  
 }
-
 nav {
     background-color: #d18cc2;
     display: flex;
@@ -29,13 +28,107 @@ nav {
                 color: white;
                 text-decoration: none;
             }
+            nav ul li :hover{
+                color: cyan;
+            }
+
+
 
 .artistas_index {
+    margin: 35px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.artistas_index :hover{
+    transition: 0.5s;
+    width: 210px;
 }
 
     .artistas_index img {
         width: 200px;
+        border-radius: 1000%;
     }
+
+h2,h1{
+    text-align: center;
+}
+
+#une {
+    margin: 30px;
+    height: 350px;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.form {
+    margin: 20px;
+    border-style: solid;
+    width: 20%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+    .form input,button {
+        height: 20px;
+        width: 85%;
+    }
+
+
+.artistas {
+    margin: 0px 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+        .artistas section {
+            margin: 35px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .artistas section div {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+.iframes {
+    width: 100%;
+}
+
+    .artistas figure {
+        margin: 35px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        .artistas igure div {
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            padding: 30px;
+        }
+
+.sneakers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+    .sneakers figure {
+        border: solid 1px;
+        width: 30%;
+        margin: 10px 20px;
+    }
+        .sneakers figure img {
+            width: 60%;
+        }
