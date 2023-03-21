@@ -1,0 +1,41 @@
+*{
+  margin: 0;  
+}
+
+nav {
+    background-color: #d18cc2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav a img {
+        width: 8%;
+        margin: 0px 25px;
+        padding: 10px 0px;
+    }
+    nav ul {
+        width: 30%;
+        margin: 0px 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+        nav ul li {
+            padding: 0px 20px;
+        }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+.artistas_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+    .artistas_index img {
+        width: 200px;
+    }
