@@ -5,8 +5,6 @@
  */
 package clases;
 
-import java.util.Scanner;
-
 /**
  *
  * @author santi
