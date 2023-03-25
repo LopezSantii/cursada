@@ -15,13 +15,14 @@ public class ej_3 {
                 matriz1[i][j] = leer.nextInt();
             }
         }
+
         
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (matriz1[i][j]<0) {
-                    matriz2[j][i] = matriz1[i][j] - (matriz1[i][j]*2);
+                    matriz2[j][i] = (matriz1[i][j]*-1);
                 }else{
-                    matriz2[j][i] = matriz1[i][j] + (matriz1[i][j]*2);
+                    matriz2[j][i] =(matriz1[i][j]*2);
                 }
             }
         }
