@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
-  margin: 0;  
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
+
+
+/* nav bar */
 nav {
-    background-color: #d18cc2;
+    background-color: #181818;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-    nav a img {
-        width: 8%;
+    nav a{
+        width: 3%;
         margin: 0px 25px;
         padding: 10px 0px;
     }
+    nav a img {
+        width: 100%;
+    }
     nav ul {
-        width: 30%;
+        width: auto;
         margin: 0px 15px;
         list-style: none;
         display: flex;
@@ -30,15 +38,89 @@ nav {
             }
             nav ul li :hover{
                 color: cyan;
+            }          
+
+
+/* headerIndex */
+header{
+    display: flex;
+    background-color: rgb(200, 194, 194);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+}
+
+    header section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25vw;
+        margin-left: 25px;
+    }
+
+        header section h1{
+            margin: 15px;
+        }
+
+        header section p{
+            text-align: center;
+            margin: 15px;
+        }
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d18cc2;
+    height: 15vh;
+}
+
+    footer section{
+        margin: 0px 25px;
+    }
+
+        footer section a{
+            text-decoration: none;
+            margin: 10px;
+        }
+            footer section a svg{
+                color: white;
             }
+        footer p {
+            margin: 25px;
+            color: white;
+        }
 
 
+/* Index */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.button {
+    height: 30px;
+    width: 50%;
+    margin: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: cyan;
+}
+
+.button:hover {
+    cursor: pointer;
+}
 
 .artistas_index {
-    margin: 35px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .artistas_index :hover{
@@ -49,31 +131,77 @@ nav {
     .artistas_index img {
         width: 200px;
         border-radius: 1000%;
+    }    
+
+.flex{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .flex a{
+        margin: 25px;
+        text-decoration: none;
     }
+
+        .flex a img{
+            width: 20vw;
+            text-decoration: none;
+        }
+
+
+.fecha{
+    color: white;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+}
+    .fecha p{
+        margin: 10px;
+    }
+    .fecha svg{
+        margin: 10px;
+    }
+
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_center p {
+    margin: 20px;
+}
+
+.unete_index{
+    background-color: white;
+    width: 65vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
 
 h2,h1{
     text-align: center;
 }
 
-#une {
-    margin: 30px;
-    height: 350px;
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
 
+/* Form_page */
 .form {
+    background-color: white;
     margin: 20px;
-    border-style: solid;
     width: 20%;
-    height: 300px;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
     .form input,button {
@@ -82,6 +210,7 @@ h2,h1{
     }
 
 
+/* Artistas_page */
 .artistas {
     margin: 0px 35px;
     display: flex;
@@ -95,29 +224,31 @@ h2,h1{
             justify-content: space-between;
         }
     
-        .artistas section div {
+            .artistas section div {
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+            }
+
+        .artistas figure {
+            margin: 35px 0px;
             display: flex;
-            flex-direction: column;
-            padding: 30px;
+            flex-direction: row;
+            justify-content: center;
         }
+            .artistas figure div {
+                display: flex;
+                flex-direction: column;
+                justify-content:start;
+                padding: 30px;
+            }
 
 .iframes {
     width: 100%;
 }
 
-    .artistas figure {
-        margin: 35px 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-        .artistas igure div {
-            display: flex;
-            flex-direction: column;
-            justify-content:start;
-            padding: 30px;
-        }
 
+/* Sneakers_page */
 .sneakers {
     display: flex;
     flex-flow: row wrap;
