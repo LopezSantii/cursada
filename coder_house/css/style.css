@@ -1,65 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
-  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* nav bar */
-nav {
-    background-color: #181818;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#nav li {
+    margin: 0px 10px;
 }
-    nav a{
-        width: 3%;
-        margin: 0px 25px;
-        padding: 10px 0px;
-    }
-    nav a img {
-        width: 100%;
-    }
-    nav ul {
-        width: auto;
-        margin: 0px 15px;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } 
-        nav ul li {
-            padding: 0px 20px;
-        }
-            nav ul li a {
-                color: white;
-                text-decoration: none;
-            }
-            nav ul li :hover{
-                color: cyan;
-            }          
 
+#nav li :hover{
+    color: cyan;
+}         
+
+nav section a img {
+    width: 80px;
+}
 
 /* headerIndex */
 header{
+    color: white;
+    width: 100%;
     display: flex;
-    background-color: rgb(200, 194, 194);
+    background-image: url(/img/banner_balenciaga.jpg);
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     header section{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
         width: 25vw;
         margin-left: 25px;
     }
 
         header section h1{
+            text-align: center;
             margin: 15px;
         }
 
@@ -74,7 +57,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d18cc2;
     height: 15vh;
 }
 
@@ -87,16 +69,16 @@ footer{
             margin: 10px;
         }
             footer section a svg{
-                color: white;
+                color: black;
             }
         footer p {
             margin: 25px;
-            color: white;
+            color: black;
         }
 
 
 /* Index */
-.main{
+/* .main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -104,18 +86,6 @@ footer{
     background-color: rgb(240, 240, 240);
 }
 
-.button {
-    height: 30px;
-    width: 50%;
-    margin: 15px;
-    border-radius: 50px;
-    border: none;
-    background-color: cyan;
-}
-
-.button:hover {
-    cursor: pointer;
-}
 
 .artistas_index {
     display: flex;
@@ -123,15 +93,9 @@ footer{
     justify-content: space-evenly;
 }
 
-.artistas_index :hover{
-    transition: 0.5s;
-    width: 210px;
-}
 
-    .artistas_index img {
-        width: 200px;
-        border-radius: 1000%;
-    }    
+
+      
 
 .flex{
     
@@ -151,18 +115,7 @@ footer{
         }
 
 
-.fecha{
-    color: white;
-    background-color: #181818;
-    display: flex;
-    justify-content: center;
-}
-    .fecha p{
-        margin: 10px;
-    }
-    .fecha svg{
-        margin: 10px;
-    }
+
 
 .flex_center{
     display: flex;
@@ -174,25 +127,16 @@ footer{
     margin: 20px;
 }
 
-.unete_index{
-    background-color: white;
-    width: 65vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-evenly ;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
+
 
 h2,h1{
     text-align: center;
-}
+} */
 
 
 /* Form_page */
-.form {
+
+/* .form {
     background-color: white;
     margin: 20px;
     width: 20%;
@@ -207,11 +151,11 @@ h2,h1{
     .form input,button {
         height: 20px;
         width: 85%;
-    }
+    } */
 
 
 /* Artistas_page */
-.artistas {
+/* .artistas {
     margin: 0px 35px;
     display: flex;
     flex-flow: row wrap;
@@ -245,11 +189,11 @@ h2,h1{
 
 .iframes {
     width: 100%;
-}
+} */
 
 
 /* Sneakers_page */
-.sneakers {
+/* .sneakers {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -262,4 +206,81 @@ h2,h1{
     }
         .sneakers figure img {
             width: 60%;
+        } */
+
+
+.artistas_index {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.link_artistas{
+    width: 210px;
+}
+
+.link_artistas :hover {
+    transition: 0.5s;
+    transform: scale(1.07);
+}
+
+.bg_button{
+    background-color: black;
+    color: white;
+}
+.bg_button:hover{
+    color: white;
+    background-color: rgb(180, 177, 177);
+}
+
+.fecha {
+    display: flex;
+    justify-content: center;
+}
+
+.fecha p {
+    margin: 10px;
+}
+
+.fecha svg {
+    margin: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.check{
+    display: flex;
+}
+    .check p{
+        margin-left: 30px;
+    }
+
+    .check svg{
+        margin: 2px 0px;
+    }
+
+.banner{
+    width: 100%;
+}
+
+.unete_index {
+    background-color: #c3c7ca;
+    width: 100%;
+    height: 40vh;
+}
+
+@media (width<= 900px){
+    header {
+            background-image: url(/img/banner_mobile.jpg);
+            width: 100%;
+            background-attachment:scroll;
+            background-position: end;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+}
+
+.margin_sections{
+    margin-top: 100px;
+}
