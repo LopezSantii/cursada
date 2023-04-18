@@ -21,13 +21,13 @@ header{
     color: white;
     width: 100%;
     display: flex;
-    background-image: url(/img/banner_balenciaga.jpg);
+    background-image: url(../img/banner_balenciaga.jpg);
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     height: 80vh;
     background-attachment: fixed;
-    background-position: end;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -57,7 +57,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
 }
 
     footer section{
@@ -223,6 +223,14 @@ h2,h1{
     transform: scale(1.07);
 }
 
+.button_carousel {
+    color: rgb(180, 177, 177);
+}
+
+.button_carousel :hover{
+    color: rgb(180, 177, 177);
+}
+
 .bg_button{
     background-color: black;
     color: white;
@@ -232,19 +240,13 @@ h2,h1{
     background-color: rgb(180, 177, 177);
 }
 
-.fecha {
-    display: flex;
-    justify-content: center;
-}
 
-.fecha p {
-    margin: 10px;
+.button_snk{
+    border-radius: 0px;
+    /* margin-top: 20px; */
+    width: 100%;
+    padding: 2px
 }
-
-.fecha svg {
-    margin: 13px;
-}
-
 a{
     text-decoration: none;
 }
@@ -265,22 +267,53 @@ a{
 }
 
 .unete_index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #c3c7ca;
     width: 100%;
     height: 40vh;
 }
 
-@media (width<= 900px){
-    header {
-            background-image: url(/img/banner_mobile.jpg);
-            width: 100%;
-            background-attachment:scroll;
-            background-position: end;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+.margin_sections {
+    margin-top: 100px;
 }
 
-.margin_sections{
-    margin-top: 100px;
+.button_carousel{
+    border-color: white;
+    border-style: none;
+}
+
+.bg_snk{
+    background-color: #f4f4f4;
+}
+
+@media (width<= 990px){
+    header {
+            background-image: url(../img/banner_mobile.jpg);
+            width: 100%;
+            background-attachment:scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            width: 100%;
+        }
+            header section h1{
+                font-size: 1.5em;
+            }
+
+                header section div a {
+                    margin: 10px;
+                }
+
+    .unete_index {
+        height: 30vh;
+    }
+        .unete_index h2{
+            margin-top: 20px;
+        }
+    .p_mobile {
+        font-size:0.8em;
+    }
 }
